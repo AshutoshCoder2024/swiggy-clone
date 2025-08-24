@@ -21,3 +21,16 @@ proxyserver = "https://cors-anywhere.herokuapp./";
 
 
 all the section 
+
+
+
+
+problem that  o face while making this project 
+1 handle lagre amont of data as it is a large number of data as saome data have same structure but not all some have diff do i have to handle then like when i choose any brand like pizza hart or dominose then there  is a categories  section in some section  non veg veg ect 
+as i i am selectiong on the basic of title 
+
+
+
+
+
+2 in naming the file name like i make file name then confuse which file is responsve for what 

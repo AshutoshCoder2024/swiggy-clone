@@ -22,6 +22,7 @@ export default function Restuarant() {
     }
     FetchData();
   }, []);
+  
   if (RestuarantData.length === 0) return <Shimmer></Shimmer>;
 
   return (

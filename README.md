@@ -4,6 +4,7 @@ A modern, responsive food delivery application built with React and Tailwind CSS
 
 ![Swiggy Clone](https://img.shields.io/badge/React-19.1.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.7-38B2AC) ![Vite](https://img.shields.io/badge/Vite-6.3.5-646CFF)
 
+
 ## 🚀 Features
 
 - **🏠 Home Page**: Beautiful landing page with food categories and restaurant options
@@ -16,16 +17,17 @@ A modern, responsive food delivery application built with React and Tailwind CSS
 - **⚡ Fast Loading**: Optimized performance with Vite build tool
 - **🎨 Modern UI**: Clean and intuitive user interface with Tailwind CSS
 
-## 🛠️ Tech Stack
 
+
+## 🛠️ Tech Stack 
 - **Frontend**: React 19.1.0
 - **Styling**: Tailwind CSS 4.1.7
 - **Build Tool**: Vite 6.3.5
 - **Routing**: React Router DOM 7.7.0
 - **Development**: ESLint for code quality
 
-## 📦 Installation
 
+## 📦 Installation
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/swigy-clone.git
@@ -125,6 +127,7 @@ https://www.swiggy.com/dapi/menu/pl/search?lat=22.8006&lng=86.1871&restaurantId=
 - All restaurant menus follow the same endpoint pattern
 - The app dynamically passes restaurant IDs to fetch specific menu data
 
+
 ### CORS Proxy Configuration
 ```javascript
 const proxyserver = "https://cors-anywhere.herokuapp.com/";
@@ -163,6 +166,7 @@ Development server configuration in `vite.config.js` with React plugin.
 
 ## 🌟 Features in Detail
 
+
 ### Food Categories
 - Pizza, Burger, Chinese, North Indian
 - Rolls, Momos, Cakes, Paratha
@@ -171,11 +175,13 @@ Development server configuration in `vite.config.js` with React plugin.
 - Kebabs, Samosa, Gulab Jamun, Shake
 - Pure Veg options
 
+
 ### Restaurant Features
 - Restaurant ratings and reviews
 - Delivery time estimation
 - Cuisine type display
 - Restaurant images and descriptions
+
 
 ### User Experience
 - Smooth navigation between pages
@@ -183,7 +189,9 @@ Development server configuration in `vite.config.js` with React plugin.
 - Search functionality
 - Responsive design across devices
 
+
 ## 🚧 Challenges Faced & Solutions
+
 
 ### 1. Handling Large Amounts of Data
 **Problem**: Managing large datasets with varying structures across different restaurants.
@@ -194,8 +202,11 @@ Development server configuration in `vite.config.js` with React plugin.
 - Created flexible components that adapt to various data formats
 - Implemented category-based filtering (Veg/Non-Veg sections)
 
+
+
 ### 2. File Naming and Organization
 **Problem**: Confusion about which file handles which functionality.
+
 
 **Solution**:
 - Established clear naming conventions
@@ -203,20 +214,27 @@ Development server configuration in `vite.config.js` with React plugin.
 - Organized files by feature and responsibility
 - Used descriptive component names
 
+
 ### 3. Search Functionality Limitations
 **Problem**: Search API requires active Swiggy session cookies, which aren't available through the proxy server.
+
 
 **Technical Details**:
 - Swiggy's search API expects active user session cookies
 - CORS proxy server doesn't maintain Swiggy session state
 - Search requests fail without proper authentication cookies
 
+
 **Workaround**:
 - Implemented client-side filtering for available data
 - Used restaurant menu data for local search functionality
 - Created mock search results for demonstration purposes
 
+
+
+
 ## 🔍 Technical Implementation Details
+
 
 ### Data Flow
 1. **Restaurant Listing**: Fetches from Swiggy's restaurant API
@@ -224,10 +242,13 @@ Development server configuration in `vite.config.js` with React plugin.
 3. **Search**: Client-side filtering of available menu items
 4. **Categories**: Handles different restaurant category structures
 
+
+
 ### State Management
 - Uses React hooks for local state management
 - Implements loading states with shimmer effects
 - Manages API responses and error handling
+
 
 ## 🤝 Contributing
 
@@ -239,7 +260,9 @@ Development server configuration in `vite.config.js` with React plugin.
 
 ## 📄 License
 
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ## 🙏 Acknowledgments
 
@@ -252,9 +275,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **GitHub**: [Your GitHub Profile]
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Email**: [ashutoshsahu9601@gmail.com]
+- **LinkedIn**: [https://www.linkedin.com/in/ashutosh-kumar-sahu-5a5713331/]
+- **Insagram**:[https://www.instagram.com/ashutosh_sahu_00/]
 
 ---
 

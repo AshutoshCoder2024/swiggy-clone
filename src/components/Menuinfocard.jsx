@@ -1,7 +1,9 @@
 // this is for all item when i click any restuarent 
 
+import { useState } from "react";
 export default function MenuinfoCard({ menuitems }) {
   // console.log(menuitems);
+  const [count,setcount]=useState(0)
 
   return (
     <>
@@ -27,15 +29,24 @@ export default function MenuinfoCard({ menuitems }) {
           </div>
           <p className="mb-1">{menuitems?.description}</p>
         </div>
-        <div className="w-[20%] relative">
+        <div className="w-[20%] relative h-42">
           <img
-            className="w-full  h-36 object-cover rounded-3xl "
+            className="w-60  h-36 object-cover rounded-3xl "
             src={
               "https://media-assets.swiggy.com/swiggy/image/upload/"+
               menuitems?.imageId 
             }
           ></img>
-          <button className="absolute  bottom-1  bg-white left-20 rounded-xl text-2xl shadow-md text-green-600 px-4 py-2 border border-white">ADD</button>
+          {
+            (count==0)?(<button className="absolute  bottom-1  bg-white left-20 rounded-xl text-2xl shadow-md text-green-600 px-4 py-2 border border-white" onClick={()=>setcount(1)}>ADD</button>):(
+              <div className=" absolute flex gap-4  bottom-1 left-20 rounded-xl text-2xl bg-white  text-green-600 px-4 py-2 shadow-md border-white"> 
+                <button onClick={()=>setcount(count-1)}>-</button>
+                <span >{count}</span>
+                <button  onClick={()=>setcount(count+1)}>+</button>
+
+                </div>
+            )
+          }
         </div>
       </div>
       <hr className="mb-4 mt-2"></hr>

@@ -4,6 +4,7 @@ A modern, responsive food delivery application built with React and Tailwind CSS
 
 ![Swiggy Clone](https://img.shields.io/badge/React-19.1.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.7-38B2AC) ![Vite](https://img.shields.io/badge/Vite-6.3.5-646CFF)
 
+
 ## 🚀 Features
 
 - **🏠 Home Page**: Beautiful landing page with food categories and restaurant options
@@ -16,6 +17,9 @@ A modern, responsive food delivery application built with React and Tailwind CSS
 - **⚡ Fast Loading**: Optimized performance with Vite build tool
 - **🎨 Modern UI**: Clean and intuitive user interface with Tailwind CSS
 
+
+
+## 🛠️ Tech Stack 
 ## 🛠️ Tech Stack 
 - **Frontend**: React 19.1.0
 - **Styling**: Tailwind CSS 4.1.7

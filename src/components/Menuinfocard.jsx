@@ -1,9 +1,35 @@
 // this is for all item when i click any restuarent 
 
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import {addItems,IncremenetItems,DecrementItems} from "../Stored/Cartslicer"
+import { useDispatch } from "react-redux";
+
+
+
+
 export default function MenuinfoCard({ menuitems }) {
   // console.log(menuitems);
-  const [count,setcount]=useState(0)
+
+  const dispatch = useDispatch();
+  const items=useSelector(state=>state.cartslice.items)
+
+  const element=items.find(item=>item.id===menuitems.id);
+  const count=element?element.quantity:0;
+
+
+  function handleAdditems(){
+    dispatch(addItems(menuitems))
+  }
+
+  function handleIncrementItems(){
+    dispatch(IncremenetItems(menuitems))
+  }
+
+  function handleDecrementItems(){
+    dispatch(DecrementItems(menuitems))
+  }
+
 
   return (
     <>
@@ -38,11 +64,11 @@ export default function MenuinfoCard({ menuitems }) {
             }
           ></img>
           {
-            (count==0)?(<button className="absolute  bottom-1  bg-white left-20 rounded-xl text-2xl shadow-md text-green-600 px-4 py-2 border border-white" onClick={()=>setcount(1)}>ADD</button>):(
+            (count==0)?(<button className="absolute  bottom-1  bg-white left-20 rounded-xl text-2xl shadow-md text-green-600 px-4 py-2 border border-white" onClick={()=>handleAdditems()}>ADD</button>):(
               <div className=" absolute flex gap-4  bottom-1 left-20 rounded-xl text-2xl bg-white  text-green-600 px-4 py-2 shadow-md border-white"> 
-                <button onClick={()=>setcount(count-1)}>-</button>
+                <button onClick={()=>handleDecrementItems()}>-</button>
                 <span >{count}</span>
-                <button  onClick={()=>setcount(count+1)}>+</button>
+                <button  onClick={()=>handleIncrementItems()}>+</button>
 
                 </div>
             )
@@ -52,4 +78,5 @@ export default function MenuinfoCard({ menuitems }) {
       <hr className="mb-4 mt-2"></hr>
     </>
   );
+
 }

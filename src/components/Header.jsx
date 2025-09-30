@@ -2,6 +2,7 @@ import swigy_logo from "../photos/Swiggy_logo_bml6he.png";
 import { Link } from "react-router";
 import Restuarant from "./Restuarants";
 
+
 export default function Header() {
   return (
     <header className="bg-[#ff5200] font-serif py-6">
@@ -9,22 +10,22 @@ export default function Header() {
       <div className="flex justify-between  container max-auto items-center p-4 border-b  max-w-[100%] border-white  ">
         <img className="w-40 v-12" src={swigy_logo}></img>
         <div className="text-white font-bold text-sm flex gap-19 items-center">
-          <a href="https://www.swiggy.com/corporate/" target="_blank">
+          <a href=" " target="_blank">
             Swigy Corporate{" "}
           </a>
-          <a href="https://www.swiggy.com/corporate/" target="_blank">
+          <a href="" target="_blank">
             Patner with us{" "}
           </a>
           <a
             className="border  py-3 px-4   rounded-[50px]"
-            href="https://www.swiggy.com/corporate/"
+            href=" "
             target="_blank"
           >
             Get the App{" "}
           </a>
           <a
             className=" text-amber-50 bg-black border border-black py-3 px-4  rounded-2xl   "
-            href="https://www.swiggy.com/corporate/"
+            href=" "
             target="_blank"
           >
             Sign in{" "}

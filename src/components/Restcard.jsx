@@ -2,8 +2,8 @@ export default function RestCard({ RestData }) {
   return (
     <>
       <div className="flex-none shadow shadow--500 border-red-100 border-1 ml-1    rounded-3xl mb-[5px]">
-        <a href={RestData?.cta?.link} target="_blank">
-         
+        {/* <a href={RestData?.cta?.link} target="_blank"> */}
+        <a href={""} target="_blank">
           {/* img and name rating  */}
           <div className="relative">
             <img

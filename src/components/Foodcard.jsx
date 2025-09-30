@@ -1,7 +1,7 @@
 export default function Foodcard({ fooddata }) {
   return (
     <>
-      <a href={fooddata?.action?.link}>
+      {/* <a href={fooddata?.action?.link}> */}
         <img
           className="max-w-40 h-50 object-cover"
           src={
@@ -10,7 +10,7 @@ export default function Foodcard({ fooddata }) {
           }
           alt=""
         />
-      </a>
+      {/* </a> */}
     </>
   );
 }

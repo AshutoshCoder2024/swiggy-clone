@@ -1,7 +1,7 @@
 export default function Groceriescard({ groceriesdata }) {
   return (
     <>
-      <a href={groceriesdata.action.link}>
+      <a href={""}>
         <img
           className="max-w-40 h-36 object-cover"
           src={

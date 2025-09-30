@@ -130,11 +130,22 @@ https://www.swiggy.com/dapi/menu/pl/search?lat=22.8006&lng=86.1871&restaurantId=
 
 
 ### CORS Proxy Configuration
+The app uses a local proxy server configured in `vite.config.js` to access Swiggy's API due to cross-origin restrictions.
+
 ```javascript
-const proxyserver = "https://cors-anywhere.herokuapp.com/";
+// vite.config.js
+server: {
+  proxy: {
+    '/api': {
+      target: 'https://www.swiggy.com',
+      changeOrigin: true,
+      rewrite: (path) => path.replace(/^\/api/, '/dapi'),
+    }
+  }
+}
 ```
 
-**Note**: The app uses a CORS proxy to access Swiggy's API due to cross-origin restrictions.
+**Note**: All API calls now use the `/api` prefix which gets automatically proxied to Swiggy's servers.
 
 ## 🎨 Styling
 

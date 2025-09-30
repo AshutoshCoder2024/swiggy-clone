@@ -8,11 +8,10 @@ export default function Restuarant() {
   // fetch Restuarant data from api
   useEffect(() => {
     async function FetchData() {
-      const proxyserver = "https://cors-anywhere.herokuapp.com/";
       const swiggyApi =
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=10.054039908667727&lng=76.34344674532176&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+        "/api/restaurants/list/v5?lat=10.054039908667727&lng=76.34344674532176&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
-      const response = await fetch(proxyserver + swiggyApi);
+      const response = await fetch(swiggyApi);
       const data = await response?.json();
       // setRestData({data});
       setRestuarantData(

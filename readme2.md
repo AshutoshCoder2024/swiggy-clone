@@ -16,7 +16,8 @@ Burger King(API) =https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&com
 In  Api of pizza hurt and in burger king there is only one diff id similary there are many more restuarants that have only diff in there id and all has same structure  so we habe to pass there id and call api of that restuarant 
 
     
-proxyserver = "https://cors-anywhere.herokuapp./"; 
+// Local proxy server configured in vite.config.js
+// All API calls now use /api prefix which gets proxied to Swiggy 
 
 
 

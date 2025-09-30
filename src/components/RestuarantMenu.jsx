@@ -9,9 +9,8 @@ export default function RestuarantMenu() {
 
   useEffect(() => {
     async function fetchData() {
-      const proxyserver = "https://cors-anywhere.herokuapp.com/";
-      const swiggyApi = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.3440997&lng=85.309562&restaurantId=${id}`;
-      const response = await fetch(proxyserver + swiggyApi);
+      const swiggyApi = `/api/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.3440997&lng=85.309562&restaurantId=${id}`;
+      const response = await fetch(swiggyApi);
       const data = await response.json();
       const tempData =
         data?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
